@@ -4,9 +4,8 @@
   "description": "Firebase functions email logger",
   "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run test && tsc",
+    "test": "npx eslint . --ext .ts,.tsx"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,9 @@
   },
   "homepage": "https://github.com/jaredforth/ffel#readme",
   "devDependencies": {
-    "tslint": "^6.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
     "typescript": "^4.0.3"
   }
 }
