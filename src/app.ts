@@ -4,6 +4,7 @@ if (process.env.SENDGRID_API_KEY) {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 }
 
+// TODO update this with environment vars
 const msg = {
     to: 'jforth22@gmail.com',
     from: 'jared.forth@rivalmind.com', // Use the email address or domain you verified above
@@ -14,7 +15,7 @@ const msg = {
 //ES6
 sgMail
     .send(msg)
-    .then(() => {console.log('hello')}, error => {
+    .then(() => {console.log('sending email')}, error => {
         console.error(error);
 
         if (error.response) {
