@@ -2,8 +2,10 @@
   "name": "ffel",
   "version": "1.0.0",
   "description": "Firebase functions email logger",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
+    "start": "tsc && node dist/app.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
