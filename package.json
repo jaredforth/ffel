@@ -1,0 +1,19 @@
+{
+  "name": "ffel",
+  "version": "1.0.0",
+  "description": "Firebase functions email logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredforth/ffel.git"
+  },
+  "author": "Jared Forth <jaredforthdev@gmail.com> (https://jaredforth.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaredforth/ffel/issues"
+  },
+  "homepage": "https://github.com/jaredforth/ffel#readme"
+}
