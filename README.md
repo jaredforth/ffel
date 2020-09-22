@@ -7,13 +7,17 @@
 ![GitHub issues](https://img.shields.io/github/issues/jaredforth/ffel)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/jaredforth/ffel)
 
-# ffel
+# FFEL
 
-Firebase Function Email Logger
+## About
+
+**F**FEL **F**irebase **E**mail Logger.
+
+FFEL is an alternate logging system for NodeJS applications. It uses SendGrid to send emails with an error message to a specified emial address. It was developed for programs running on Firebase Functions, but could be used anywhere an email needs to be send with an error. 
 
 ## Installation 
 
-The Firebase function email logger can be installed via the Github Package Repository: 
+FFEL can be installed via the Github Package Repository: 
 
 ```shell script
 npm install @jaredforth/ffel@1.0.0
