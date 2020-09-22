@@ -13,10 +13,16 @@ Firebase Function Email Logger
 
 ## Installation 
 
-The Firebase function email logger can be installed via NPM: 
+The Firebase function email logger can be installed via the Github Package Repository: 
 
 ```shell script
 npm install @jaredforth/ffel@1.0.0
+```
+
+or NPM:
+
+```shell script
+npm install ffel
 ```
 
 ## Usage 
