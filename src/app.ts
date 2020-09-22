@@ -1,15 +1,5 @@
 import sgMail from '@sendgrid/mail';
 
-
-
-// TODO update this with environment vars
-const msg = {
-    to: 'jforth22@gmail.com',
-    from: 'jared.forth@rivalmind.com', // Use the email address or domain you verified above
-    subject: 'Sending with Twilio SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js'
-};
-
 // This is the configuration for SendGrid
 interface Config {
     to: string;
@@ -31,12 +21,14 @@ export class Logger implements Config {
         this.from = config.from;
         this.subject = config.subject;
         this.text = config.text;
+
+        console.log(this);
     }
 
     public log(message: string) : void {
         this.text = message;
         sgMail
-            .send(msg)
+            .send(this)
             .then(() => {console.log('sending email')}, error => {
                 console.error(error);
 
