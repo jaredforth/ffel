@@ -50,5 +50,5 @@ Once setup has been completed, you can use the `log()` method to send an email v
 logger.log("Your error message")
 ```
 
-This will send an emial to the `to` field specified in the 
+This will send an email to the `to` field specified in the 
 initialization argument and log the error to the console.
