@@ -1,5 +1,5 @@
 {
-  "name": "ffel",
+  "name": "@jaredforth/ffel",
   "version": "1.0.0",
   "description": "Firebase functions email logger",
   "main": "dist/app.js",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaredforth/ffel.git"
+    "url": "git+https://github.com/jaredforth/ffel"
   },
   "author": "Jared Forth <jaredforthdev@gmail.com> (https://jaredforth.com)",
   "license": "MIT",
@@ -38,5 +38,6 @@
   "dependencies": {
     "@sendgrid/mail": "^7.2.6",
     "@types/node": "^14.11.1"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
