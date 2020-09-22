@@ -8,14 +8,17 @@ interface Config {
     text: string;
 }
 
-export default class Logger implements Config {
+export class Logger implements Config {
     to: string;
     from: string;
     subject: string;
     text: string;
 
     public constructor(config: Config) {
-        Logger.setApiKey();
+        console.log("Initialize logger with: ");
+        console.log(config);
+
+        console.log(this.setApiKey());
 
         this.to = config.to;
         this.from = config.from;
@@ -24,7 +27,9 @@ export default class Logger implements Config {
     }
 
     public log(message: string) : void {
+        console.log("Using the logger log function");
         if (message) {
+            console.log("The message is: " + message);
             this.text = message;
         }
         sgMail
@@ -33,6 +38,7 @@ export default class Logger implements Config {
                 from: this.from,
                 subject: this.subject,
                 text: this.text,
+                html: this.text
             })
             .then(() => {console.log('sending email')}, error => {
                 console.log("Error sending email: ");
@@ -45,7 +51,7 @@ export default class Logger implements Config {
             });
     }
 
-    private static setApiKey() : boolean {
+    private setApiKey() : boolean {
         if (process.env.SENDGRID_API_KEY) {
             sgMail.setApiKey(process.env.SENDGRID_API_KEY);
             return true;

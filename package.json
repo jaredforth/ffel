@@ -5,9 +5,11 @@
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
   "scripts": {
-    "prepublish": "npm run test && tsc",
+    "prepare": "npm run test && tsc",
     "build": "npm run test && tsc",
-    "test": "npx eslint . --ext .ts,.tsx"
+    "test": "npx eslint . --ext .ts,.tsx",
+    "clean": "rm -r dist",
+    "updateLink": "npm run clean && tsc && npm rm ffel -g && npm link"
   },
   "repository": {
     "type": "git",
