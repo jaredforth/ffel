@@ -19,15 +19,14 @@ export class Logger implements Config {
     public constructor(config: Config) {
         console.info("Initialize logger with: ");
         console.info(config);
-
-        console.info(this.setApiKey());
-
+        
         this.to = config.to;
         this.from = config.from;
         this.subject = config.subject;
         this.text = config.text;
 
         this.apiKey = config.apiKey;
+        this.setApiKey();
     }
 
     public log(err: string) : void {
