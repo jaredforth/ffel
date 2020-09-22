@@ -20,7 +20,7 @@ FFEL is an alternate logging system for NodeJS applications. It uses SendGrid to
 FFEL can be installed via the Github Package Repository: 
 
 ```shell script
-npm install @jaredforth/ffel@1.0.0
+npm install @jaredforth/ffel@1.0.1
 ```
 
 or NPM:
