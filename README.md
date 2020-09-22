@@ -41,7 +41,8 @@ const msg = {
     to: 'email@example.com',
     from: 'email@example.com',
     subject: 'Example Subject',
-    text: 'A message to send'
+    text: 'A message to send',
+    apiKey: 'Your SendGrid API key'
 }
 ```
 
@@ -49,12 +50,6 @@ Initialize with:
 
 ```javascript
 const logger = new Logger(msg);
-```
-
-An environment variable must be created with your [SendGrid](https://sendgrid.com/) API key as follows:
-
-```shell script
-export SENDGRID_API_KEY='Your API key'
 ```
 
 Once setup has been completed, you can use the `log()` method to send an email via SendGrid and have your error logged to the console: 

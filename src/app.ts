@@ -6,6 +6,7 @@ interface Config {
     from: string;
     subject: string;
     text: string;
+    apiKey: string;
 }
 
 export class Logger implements Config {
@@ -13,24 +14,27 @@ export class Logger implements Config {
     from: string;
     subject: string;
     text: string;
+    apiKey: string;
 
     public constructor(config: Config) {
-        console.log("Initialize logger with: ");
-        console.log(config);
+        console.info("Initialize logger with: ");
+        console.info(config);
 
-        console.log(this.setApiKey());
+        console.info(this.setApiKey());
 
         this.to = config.to;
         this.from = config.from;
         this.subject = config.subject;
         this.text = config.text;
+
+        this.apiKey = config.apiKey;
     }
 
-    public log(message: string) : void {
-        console.log("Using the logger log function");
-        if (message) {
-            console.log("The message is: " + message);
-            this.text = message;
+    public log(err: string) : void {
+        console.info("Using the logger log function");
+        if (err) {
+            console.error(err)
+            this.text = err;
         }
         sgMail
             .send({
@@ -40,20 +44,20 @@ export class Logger implements Config {
                 text: this.text,
                 html: this.text
             })
-            .then(() => {console.log('sending email')}, error => {
-                console.log("Error sending email: ");
+            .then(() => {console.info('sending email...')}, error => {
+                console.error("Error sending email: ");
                 console.error(error);
 
                 if (error.response) {
-                    console.log("The error response returned: ");
+                    console.error("The error response returned: ");
                     console.error(error.response.body)
                 }
             });
     }
 
     private setApiKey() : boolean {
-        if (process.env.SENDGRID_API_KEY) {
-            sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        if (this.apiKey) {
+            sgMail.setApiKey(this.apiKey);
             return true;
         } else {
             console.error("SendGrid API key must be set");
