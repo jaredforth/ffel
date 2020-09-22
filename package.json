@@ -2,7 +2,7 @@
   "name": "ffel",
   "version": "1.0.0",
   "description": "Firebase functions email logger",
-  "main": "dist/app.js",
+  "main": "src/app.ts",
   "scripts": {
     "build": "npm run test && tsc",
     "test": "npx eslint . --ext .ts,.tsx"
