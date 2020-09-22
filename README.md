@@ -9,7 +9,7 @@ Firebase Function Email Logger
 The Firebase function email logger can be installed via NPM: 
 
 ```shell script
-npm install ffel
+npm install @jaredforth/ffel@1.0.0
 ```
 
 ## Usage 
