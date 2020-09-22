@@ -8,7 +8,7 @@ interface Config {
     text: string;
 }
 
-export class Logger implements Config {
+export default class Logger implements Config {
     to: string;
     from: string;
     subject: string;
