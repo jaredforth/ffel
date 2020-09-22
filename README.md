@@ -1,4 +1,12 @@
 ![Node.js CI](https://github.com/jaredforth/ffel/workflows/Node.js%20CI/badge.svg)
+![GitHub](https://img.shields.io/github/license/jaredforth/ffel)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/jaredforth/ffel)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/jaredforth/ffel)
+![GitHub top language](https://img.shields.io/github/languages/top/jaredforth/ffel)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jaredforth/ffel)
+![GitHub issues](https://img.shields.io/github/issues/jaredforth/ffel)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/jaredforth/ffel)
+![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/jaredforth/ffel)
 
 # ffel
 
