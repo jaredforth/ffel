@@ -24,7 +24,7 @@ The `Logger` class takes one argument, which must be an
 object of the form: 
 
 ```javascript
-const msg = {
+{
     to: 'email@example.com',
     from: 'email@example.com',
     subject: 'Example Subject',
