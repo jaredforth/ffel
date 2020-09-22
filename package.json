@@ -11,6 +11,14 @@
     "clean": "rm -r dist",
     "updateLink": "npm run clean && tsc && npm rm ffel -g && npm link"
   },
+  "keywords": [
+    "firebase",
+    "functions",
+    "logger",
+    "email",
+    "sendgrid",
+    "typescript"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jaredforth/ffel.git"
