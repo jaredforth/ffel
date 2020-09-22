@@ -1,6 +1,6 @@
 {
   "name": "@jaredforth/ffel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Firebase functions email logger",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
