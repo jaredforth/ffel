@@ -21,14 +21,19 @@ export default class Logger implements Config {
         this.from = config.from;
         this.subject = config.subject;
         this.text = config.text;
-
-        console.log(this);
     }
 
     public log(message: string) : void {
-        this.text = message;
+        if (message) {
+            this.text = message;
+        }
         sgMail
-            .send(this)
+            .send({
+                to: this.to,
+                from: this.from,
+                subject: this.subject,
+                text: this.text,
+            })
             .then(() => {console.log('sending email')}, error => {
                 console.log("Error sending email: ");
                 console.error(error);
