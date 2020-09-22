@@ -1,6 +1,6 @@
 {
   "name": "@jaredforth/ffel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Firebase functions email logger",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
@@ -39,5 +39,7 @@
     "@sendgrid/mail": "^7.2.6",
     "@types/node": "^14.11.1"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
