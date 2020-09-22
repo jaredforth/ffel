@@ -6,7 +6,6 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jaredforth/ffel)
 ![GitHub issues](https://img.shields.io/github/issues/jaredforth/ffel)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/jaredforth/ffel)
-![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/jaredforth/ffel)
 
 # ffel
 
