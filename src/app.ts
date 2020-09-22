@@ -30,9 +30,11 @@ export default class Logger implements Config {
         sgMail
             .send(this)
             .then(() => {console.log('sending email')}, error => {
+                console.log("Error sending email: ");
                 console.error(error);
 
                 if (error.response) {
+                    console.log("The error response returned: ");
                     console.error(error.response.body)
                 }
             });
