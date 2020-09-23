@@ -1,5 +1,5 @@
 ![Node.js CI](https://github.com/jaredforth/ffel/workflows/Node.js%20CI/badge.svg)
-![npm](https://img.shields.io/npm/dy/ffel)
+![npm](https://img.shields.io/npm/dm/ffel)
 ![GitHub](https://img.shields.io/github/license/jaredforth/ffel)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jaredforth/ffel)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/jaredforth/ffel)
