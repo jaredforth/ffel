@@ -1,4 +1,5 @@
 ![Node.js CI](https://github.com/jaredforth/ffel/workflows/Node.js%20CI/badge.svg)
+[![DeepScan grade](https://deepscan.io/api/teams/11311/projects/14216/branches/258526/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11311&pid=14216&bid=258526)
 ![npm](https://img.shields.io/npm/dm/ffel)
 ![GitHub](https://img.shields.io/github/license/jaredforth/ffel)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jaredforth/ffel)
