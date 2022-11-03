@@ -15,7 +15,7 @@
 
 **F**FEL **F**irebase **E**mail **L**ogger.
 
-FFEL is an alternate logging system for NodeJS applications. It uses SendGrid to send emails with an error message to a specified emial address. It was developed for programs running on Firebase Functions, but could be used anywhere an email needs to be send with an error. 
+FFEL is an alternate logging system for NodeJS applications. It uses SendGrid to send emails with an error message to a specified email address. It was developed for programs running on Firebase Functions, but could be used anywhere an email needs to be sent. 
 
 ## Installation 
 
