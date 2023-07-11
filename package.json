@@ -5,9 +5,9 @@
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
   "scripts": {
-    "prepare": "npm run test && tsc",
-    "build": "npm run test && tsc",
-    "test": "npx eslint . --ext .ts,.tsx",
+    "prepare": "npm run lint && tsc",
+    "build": "npm run lint && tsc",
+    "lint": "ts-standard --fix",
     "clean": "rm -r dist",
     "updateLink": "npm run clean && tsc && npm rm ffel -g && npm link"
   },
@@ -30,14 +30,12 @@
   },
   "homepage": "https://github.com/jaredforth/ffel#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/parser": "^4.2.0",
-    "eslint": "^7.9.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "ts-standard": "^12.0.2",
+    "@types/node": "^14.11.1"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.2.6",
-    "@types/node": "^14.11.1"
+    "@sendgrid/mail": "^7.2.6"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
