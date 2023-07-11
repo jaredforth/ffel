@@ -35,7 +35,7 @@ export class Logger implements Config {
       console.error(err)
       this.text = err
     } else {
-      return;
+      return
     }
     sgMail
       .send({
